@@ -1,0 +1,49 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+.menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  height: 20vh;
+}
+
+.menu li {
+  background-color: #262626;
+  padding: 20px;
+}
+
+.menu li a {
+  color: #fff;
+}
+
+.content {
+  background-color: #262626;
+  color: #fff;
+  padding: 20px;
+  margin: 20px 0;
+  display: none;
+}
+
+.active {
+  display: block;
+  animation: fadeIn 1s ease-in;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
